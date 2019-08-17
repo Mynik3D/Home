@@ -1,0 +1,210 @@
+// stylelint-disable at-rule-empty-line-before
+
+@import "variables";
+@import "functions";
+@import "mixins";
+@import "sprites";
+@import "fonts";
+@import "vendor";
+@import "base";
+
+
+
+
+body{
+	background: $color-white;
+	font-family: $font-family-Roboto-Slab;
+
+}
+
+.home{
+	min-height: 770px;
+	background: url(../images/home-bg.png);
+	background-size: cover;
+}
+.home{
+	box-shadow: inset  0 0 50px 386px rgba(0, 0, 0, 0.45);
+
+	&__content{
+		display: flex;
+	    justify-content: center;
+	    flex-direction: column;
+	    align-items: center;
+	    padding-top: 180px;
+
+	    h1{
+	    	font-size: 48px;
+	    	color: $color-white;
+	    	font-family: $font-family-Montserrat;
+	    	text-transform: uppercase;
+	    	margin: 0;
+	    	font-weight: bold;
+
+	    }
+	    p{
+	    	font-size: 20px;
+	    	color: $color-white;
+	    	font-family: $font-family-Roboto-Slab;
+	    	margin-top: 10px;
+	    }
+	    a{
+	    	font-size: 16px!important;
+	    	color: $color-white !important;
+	    	font-family: $font-family-Montserrat;
+	    	border: 2px solid $color-white!important;
+	    	text-transform: uppercase;
+	    	background-color: transparent;
+	    	margin-top: 35px;
+	    	padding: 16px 32px!important;
+
+	    	&:hover{
+	    		background: $color-white;
+	    		color: #c0301c !important;
+	    	}
+
+	    }
+	}
+}
+
+header{
+	padding: 35px 0;
+
+
+		.logo a{
+			padding: 0.7rem 1rem;
+		    display: block;
+		    line-height: 1;
+		    text-decoration: none;
+		    font-size: 24px;
+		    font-family: $font-family-Montserrat;
+		    color: $color-white;
+		    font-weight: 700;
+	}
+
+
+}
+.menu a{
+	font-size: 14px;
+	color: $color-white;
+	font-family: $font-family-Montserrat;
+	font-weight: 400;
+}
+
+.section-title{
+		position: relative;
+		margin-bottom: 70px;
+		h1{
+			font-family: $font-family-Montserrat;
+			font-size: 20px;
+			color: $davys-grey;
+			text-transform: uppercase;
+			font-weight: 700;
+			margin-bottom: 27px;
+		}
+	
+	.line{
+		width: 50px;
+	    border-bottom: 2px solid $davys-grey;
+	    position: absolute;
+	    left: 558px;
+	}
+
+	p{
+		font-size: 16px;
+		font-family: $font-family-Roboto-Slab;
+		color: $davys-grey;
+		line-height: 24px;
+		margin-top: 60px;
+
+
+	}
+	}
+.services{
+	background: $color-white;
+	padding: 80px 0;
+
+	
+
+.icon-typography {
+  @extend .fa;
+  @extend .fa-font;
+  font-size: 40px;
+  width: 86px;
+  height: 86px;
+  color: #c0301c;
+  border-radius: 50%;
+  padding: 20px 20px;
+  border: 2px solid #dfdfdf;
+}	
+
+.icon-code {
+  @extend .fa;
+  @extend .fa-code;
+  font-size: 40px;
+  width: 86px;
+  height: 86px;
+  color: #c0301c;
+  border-radius: 50%;
+  padding: 20px 20px;
+  border: 2px solid #dfdfdf;
+}
+
+
+.icon-support {
+  @extend .fa;
+  @extend .fa-life-ring;
+  font-size: 40px;
+  width: 86px;
+  height: 86px;
+  color: #c0301c;
+  border-radius: 50%;
+  padding: 20px 20px;
+  border: 2px solid #dfdfdf;
+}
+
+
+.icon-typography:hover{
+			background: #c0301c;
+			color: #fff;
+}
+.icon-code:hover{
+			background: #c0301c;
+			color: #fff;
+}
+.icon-support:hover{
+			background: #c0301c;
+			color: #fff;
+}
+
+&__features-text{
+	h4{
+					font-size: 14px;
+					color: #555;
+					text-transform: uppercase;
+					margin: 25px 0 15px 0;
+					font-family: $font-family-Montserrat;
+					font-weight: bold;
+	}
+	p{
+		font-size: 14px;
+		color: #555;
+		font-family: $font-family-Roboto-Slab;
+	}
+}
+
+}
+
+#about-section{
+	background: #f8f8f8;
+	padding: 100px 0;
+
+	&__content{
+				height: 130px;
+			p{
+				font-size: 14px;
+				color: #555;
+				font-family: $font-family-Roboto-Slab;
+				text-align: left;
+			}
+	}
+}
