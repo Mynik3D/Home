@@ -1,7 +1,9 @@
-
-
+extends pug/base
 append vars
 	//- ...
 
+block body-start
+	include header	
 block content
-	include header
+	include as
+
