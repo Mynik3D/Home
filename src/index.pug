@@ -1,6 +1,6 @@
 extends pug/base
 append vars
-	//- ...
+	- title = 'Home';
 
 block body-start
 	include header		
@@ -12,7 +12,7 @@ block content
 				.section-title
 					h1 Services
 					.line
-					p We offer ipsum dolor sit amet, consetetur sadipscing elitr amet
+					p.inline We offer ipsum dolor sit amet, consetetur sadipscing elitr amet
 
 				.services__features
 					.row
@@ -50,45 +50,67 @@ block content
 
 	section#about-section
 		.row.align-center
-			.small-12.column.text-center
-				.section-title
+			.large-12.columns.text-center
+				#about-section-title
 					h1 About us
 					.line
-					p Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet
+					p.inline Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet
 				#about-section__content
 					.columns.small-6.medium-expand
 						p  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirmod tempor invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos et accusam et justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. Lorem ipsum dolor sit amet. Lorem ipsum eat.
 					.columns.small-6.medium-expand
 						p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirmod tempor invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos et accusam et justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. Lorem ipsum dolor sit amet. Lorem ipsum eat.
-				.sl
-					.myslider
-						div
-							img(src="../images/Layer-12.png", alt="browser")
-						div
-							img(src="../images/Layer-13.png", alt="browser")
-						div
-							img(src="../images/Layer-15.png", alt="browser")
-						div
-							img(src="../images/Layer-16.png", alt="browser")
-						
+				
+				#about-section__slder
+					.slick-slider
+						.slider__content
+							.slider__content_header
+								img( class='vrvs' src="../images/Layer-14.png", alt="browser")
+
+							.slider__content_footer
+									h2 Md. Khalil Uddin
+									span Head of Ideas
+						.slider__content
+							.slider__content_header
+								img( class='vrvs' src="../images/Layer-13.png", alt="browser")
+							.slider__content_footer
+								h2 Md. Khalil Uddin
+								span Head of Ideas
+						.slider__content
+							.slider__content_header
+								img( class='vrvs' src="../images/Layer-15.png", alt="browser")
+							.slider__content_footer
+								h2 Md. Khalil Uddin
+								span Head of Ideas
+						.slider__content
+							.slider__content_header
+								img( class='vrvs' src="../images/Layer-16.png", alt="browser")
+							.slider__content_footer
+									h2 Md. Khalil Uddin
+									span Head of Ideas
+						.slider__content
+							.slider__content_header
+								img( class='vrvs' src="../images/Layer-15.png", alt="browser")
+							.slider__content_footer
+								h2 Md. Khalil Uddin
+								span Head of Ideas
+							
+
+								
 
 	
 
-	section#works
+	#works-section.text-center
 		.row.align-center
-			.small-12.column.text-center
+			.small-12.columns
 				.section-title
-					h1 About us
-					.line
-					p Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet
+					h1 Latest works
+					hr
+					
 				
-				.section-menu
-					.title-bar(data-responsive-toggle="example-animated-menu")(data-hide-for="medium")
-						button.menu-icon(type="button")(data-toggle)
-						.title-bar-title Menu
-					.top-bar#example-animated-menu(data-animate="hinge-in-from-top spin-out")
-						.top-bar-center
-							ul.dropdown.menu(data-dropdown-menu)
+				.categories
+					
+							ul.menu.align-center
 								li
 									a(href="#") All
 								li
@@ -99,3 +121,50 @@ block content
 									a(href="#") Development
 								li
 									a(href="#") Startegy
+
+				.row.small-up-2.medium-up-3
+							.column.small-4
+										.single-work
+												img( class='vrv' src="../images/work-2.png", alt="browser") 
+							.column.small-4
+										.single-work
+												img( class='vrv' src="../images/work-1.png", alt="browser") 
+							.column.small-4
+										.single-work
+												img( class='vrv' src="../images/work-3.png", alt="browser") 
+							.column.small-4
+										.single-work
+												img( class='vrv' src="../images/work-4.png", alt="browser") 
+							.column.small-4
+										.single-work
+												img( class='vrv' src="../images/work-5.png", alt="browser") 
+							.column.small-4
+										.single-work
+												img( class='vrv' src="../images/work-6.png", alt="browser") 
+							.column.small-4
+										.single-work
+												img( class='vrv' src="../images/work-7.png", alt="browser") 
+							.column.small-4
+										.single-work
+												img( class='vrv' src="../images/work-8.png", alt="browser") 
+							.column.small-4
+										.single-work
+												img( class='vrv' src="../images/work-9.png", alt="browser") 
+
+
+
+
+						
+
+
+
+
+	.paralax-section
+		.bg-pal
+			.row.align-center
+				.large-12.columns.text-center
+					.paralax-section__paralax
+						p Do you like OUR WORK so far?
+						p Let's talk about YOUR PROJECT!
+						a.button.large get started
+					

@@ -83,7 +83,7 @@ header{
 
 
 }
-.menu a{
+.header__nav a{
 	font-size: 14px;
 	color: $color-white;
 	font-family: $font-family-Montserrat;
@@ -92,7 +92,7 @@ header{
 
 .section-title{
 		position: relative;
-		margin-bottom: 70px;
+		// margin-bottom: 70px;
 		h1{
 			font-family: $font-family-Montserrat;
 			font-size: 20px;
@@ -115,8 +115,11 @@ header{
 		color: $davys-grey;
 		line-height: 24px;
 		margin-top: 60px;
-
-
+	}
+	p.inline{
+		margin-bottom: 70px;
+		text-align: center;
+		
 	}
 	}
 .services{
@@ -198,14 +201,86 @@ header{
 	background: #f8f8f8;
 	padding: 100px 0;
 
-	&__content{
-				height: 130px;
-				
-			p{
+	p{
 				font-size: 14px;
 				color: #555;
 				font-family: $font-family-Roboto-Slab;
 				text-align: left;
 			}
+	p.inline{
+		margin-bottom: 70px;
+		text-align: center;
+		
+	}
+	&__content{
+				height: 130px;
+				margin-bottom: 70px;
+			}
+
+	&__slder{
+		.imgblock{
+			// height: 253px;
+			// width: 262px!important;
+		}
+		img.vrvs{
+			// width: 264px;
+			// height: 250px;
+		}
+	}
+}
+
+#works-section{
+	margin-top: 100px;
+
+	.section-title{
+
+						h1{
+							color: #555;
+							font-family: $font-family-Montserrat;
+							font-size: $font-sizeh2;
+							text-transform: uppercase;
+						}
+						hr{
+							width: 50px;
+							border: 1px solid #555;
+						}
+
+
+	}
+	.categories{
+		margin-bottom: 70px;
+		.menu a{
+			color: #555;
+			font-size: 16px;
+			font-weight: normal;
+			font-family: $font-family-Roboto-Slab ;
+			&:hover{
+				color: #c0301c;
+			}
+		}
+	}
+}
+// .teamsocial{
+// 	position: absolute;
+// }
+
+
+.single-work {
+    padding: 10px;
+}
+
+
+.paralax-section{
+	// padding: 100px 0;
+	background: url(../images/paralax.png);
+	background-position-y: -330px;
+	background-attachment: fixed;
+	 .bg-pal{
+	 	padding: 100px 0;
+    	background: rgba(192,48,28,0.57);
+	 }
+		
+	&__paralax{
+		
 	}
 }
